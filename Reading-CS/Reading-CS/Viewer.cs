@@ -16,5 +16,18 @@ namespace Reading_CS
         {
             InitializeComponent();
         }
+
+        private void webBrowser1_LocationChanged(object sender, EventArgs e)
+        {
+            if (webBrowser1.Location.ToString().Contains("frontgatetickets.com"))
+            {
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

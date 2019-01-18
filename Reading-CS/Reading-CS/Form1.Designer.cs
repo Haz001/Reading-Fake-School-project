@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.view_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,13 +55,27 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Buy";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // view_btn
+            // 
+            this.view_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.view_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.view_btn.Location = new System.Drawing.Point(622, 332);
+            this.view_btn.Name = "view_btn";
+            this.view_btn.Size = new System.Drawing.Size(246, 116);
+            this.view_btn.TabIndex = 2;
+            this.view_btn.Text = "View";
+            this.view_btn.UseVisualStyleBackColor = false;
+            this.view_btn.Click += new System.EventHandler(this.view_btn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(933, 485);
+            this.Controls.Add(this.view_btn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
@@ -74,6 +89,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button view_btn;
     }
 }
 
