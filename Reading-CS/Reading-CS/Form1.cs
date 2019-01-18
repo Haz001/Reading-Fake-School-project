@@ -37,6 +37,7 @@ namespace Reading_CS
             Buypage bp = new Buypage();
             bp.ShowDialog();
 
+
         }
     }
 }
