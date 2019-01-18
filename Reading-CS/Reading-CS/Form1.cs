@@ -28,7 +28,15 @@ namespace Reading_CS
         private void view_btn_Click(object sender, EventArgs e)
         {
             Viewer web = new Viewer();
-            web.Show();
+            web.ShowDialog();
+            web = null;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Buypage bp = new Buypage();
+            bp.ShowDialog();
+
         }
     }
 }
