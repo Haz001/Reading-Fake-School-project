@@ -19,7 +19,8 @@ namespace Reading_CS
 
         private void webBrowser1_LocationChanged(object sender, EventArgs e)
         {
-            if (webBrowser1.Location.ToString().Contains("frontgatetickets.com"))
+            
+            if (webBrowser1.Location.ToString().Contains("tickets"))
             {
                 MessageBox.Show("Buy throught the application");
             }
@@ -28,6 +29,15 @@ namespace Reading_CS
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void webBrowser1_LocationChanged(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            MessageBox.Show("Test");
+            if (webBrowser1.Location.ToString().Contains("tickets"))
+            {
+                MessageBox.Show("Buy throught the application");
+            }
         }
     }
 }

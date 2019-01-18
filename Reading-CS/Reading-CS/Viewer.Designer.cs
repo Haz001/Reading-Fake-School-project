@@ -41,6 +41,7 @@
             this.webBrowser1.Size = new System.Drawing.Size(800, 450);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("https://www.readingfestival.com/", System.UriKind.Absolute);
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_LocationChanged);
             this.webBrowser1.LocationChanged += new System.EventHandler(this.webBrowser1_LocationChanged);
             // 
             // button1
