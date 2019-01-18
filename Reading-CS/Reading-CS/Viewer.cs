@@ -21,7 +21,7 @@ namespace Reading_CS
         {
             if (webBrowser1.Location.ToString().Contains("frontgatetickets.com"))
             {
-
+                MessageBox.Show("Buy throught the application");
             }
         }
 
