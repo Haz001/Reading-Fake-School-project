@@ -39,5 +39,10 @@ namespace Reading_CS
 
 
         }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
