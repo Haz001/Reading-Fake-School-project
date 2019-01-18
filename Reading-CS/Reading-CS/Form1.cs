@@ -24,5 +24,11 @@ namespace Reading_CS
                 MessageBox.Show("hello World");
             }
         }
+
+        private void view_btn_Click(object sender, EventArgs e)
+        {
+            Viewer web = new Viewer();
+            web.Show();
+        }
     }
 }
