@@ -19,8 +19,10 @@ namespace Reading_CS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Buying:\nThursday" + checkBox1.Checked.ToString());
-            
+            MessageBox.Show("Buying:\nThursday" + THURSDAY.Checked.ToString());
+            MessageBox.Show("Buying:\nFriday" + FRIDAY.Checked.ToString());
+            MessageBox.Show("Buying:\nSaturday" + SATURDAY.Checked.ToString());
+            MessageBox.Show("Buying:\nSunday" + SUNDAY.Checked.ToString());
         }
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -34,6 +36,11 @@ namespace Reading_CS
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
 
         }

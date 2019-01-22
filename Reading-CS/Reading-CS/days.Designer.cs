@@ -30,10 +30,10 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.THURSDAY = new System.Windows.Forms.CheckBox();
+            this.FRIDAY = new System.Windows.Forms.CheckBox();
+            this.SATURDAY = new System.Windows.Forms.CheckBox();
+            this.SUNDAY = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,55 +61,56 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox1
+            // THURSDAY
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
-            this.checkBox1.Location = new System.Drawing.Point(12, 135);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(298, 33);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Thursday - (Out of Stock)";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.THURSDAY.AutoSize = true;
+            this.THURSDAY.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.THURSDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.THURSDAY.Location = new System.Drawing.Point(12, 135);
+            this.THURSDAY.Name = "THURSDAY";
+            this.THURSDAY.Size = new System.Drawing.Size(298, 33);
+            this.THURSDAY.TabIndex = 3;
+            this.THURSDAY.Text = "Thursday - (Out of Stock)";
+            this.THURSDAY.UseVisualStyleBackColor = true;
+            this.THURSDAY.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // checkBox2
+            // FRIDAY
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
-            this.checkBox2.Location = new System.Drawing.Point(12, 174);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(190, 33);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Friday - £69.50";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.FRIDAY.AutoSize = true;
+            this.FRIDAY.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FRIDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.FRIDAY.Location = new System.Drawing.Point(12, 174);
+            this.FRIDAY.Name = "FRIDAY";
+            this.FRIDAY.Size = new System.Drawing.Size(190, 33);
+            this.FRIDAY.TabIndex = 4;
+            this.FRIDAY.Text = "Friday - £69.50";
+            this.FRIDAY.UseVisualStyleBackColor = true;
+            this.FRIDAY.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // checkBox3
+            // SATURDAY
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
-            this.checkBox3.Location = new System.Drawing.Point(12, 213);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(217, 33);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "Saturday - £69.50";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.SATURDAY.AutoSize = true;
+            this.SATURDAY.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SATURDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.SATURDAY.Location = new System.Drawing.Point(12, 213);
+            this.SATURDAY.Name = "SATURDAY";
+            this.SATURDAY.Size = new System.Drawing.Size(217, 33);
+            this.SATURDAY.TabIndex = 5;
+            this.SATURDAY.Text = "Saturday - £69.50";
+            this.SATURDAY.UseVisualStyleBackColor = true;
+            this.SATURDAY.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // checkBox4
+            // SUNDAY
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
-            this.checkBox4.Location = new System.Drawing.Point(12, 252);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(203, 33);
-            this.checkBox4.TabIndex = 6;
-            this.checkBox4.Text = "Sunday - £74.50";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.SUNDAY.AutoSize = true;
+            this.SUNDAY.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SUNDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.SUNDAY.Location = new System.Drawing.Point(12, 252);
+            this.SUNDAY.Name = "SUNDAY";
+            this.SUNDAY.Size = new System.Drawing.Size(203, 33);
+            this.SUNDAY.TabIndex = 6;
+            this.SUNDAY.Text = "Sunday - £74.50";
+            this.SUNDAY.UseVisualStyleBackColor = true;
             // 
             // days
             // 
@@ -117,10 +118,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(22)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.SUNDAY);
+            this.Controls.Add(this.SATURDAY);
+            this.Controls.Add(this.FRIDAY);
+            this.Controls.Add(this.THURSDAY);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "days";
@@ -135,9 +136,9 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox THURSDAY;
+        private System.Windows.Forms.CheckBox FRIDAY;
+        private System.Windows.Forms.CheckBox SATURDAY;
+        private System.Windows.Forms.CheckBox SUNDAY;
     }
 }
