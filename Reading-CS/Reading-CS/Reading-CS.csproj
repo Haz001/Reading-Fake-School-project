@@ -94,6 +94,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrderPage.resx">
+      <DependentUpon>OrderPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -122,6 +125,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date-logo-home-reading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saturday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-grunge-texture-png-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weekend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2019 tickets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
