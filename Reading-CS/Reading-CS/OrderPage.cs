@@ -16,8 +16,8 @@ namespace Reading_CS
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox6;
 
         public orderpage()
         {
@@ -98,12 +98,12 @@ namespace Reading_CS
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Reading_CS.Properties.Resources.header;
-            this.pictureBox1.Location = new System.Drawing.Point(433, 3);
+            this.pictureBox1.Image = global::Reading_CS.Properties.Resources.date_logo_home_reading;
+            this.pictureBox1.Location = new System.Drawing.Point(538, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(595, 58);
+            this.pictureBox1.Size = new System.Drawing.Size(404, 134);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // orderpage
@@ -111,12 +111,12 @@ namespace Reading_CS
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(22)))), ((int)(((byte)(28)))));
             this.BackgroundImage = global::Reading_CS.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(1478, 634);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Name = "orderpage";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
