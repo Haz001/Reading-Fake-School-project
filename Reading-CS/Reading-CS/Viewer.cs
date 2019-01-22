@@ -37,5 +37,10 @@ namespace Reading_CS
                 MessageBox.Show("Buy throught the application");
             }
         }
+
+        private void spek_btn_Click(object sender, EventArgs e)
+        {
+            speak.Say("Friday 23 August will include: 1975, Juice world, Pale Waves, camephat, hayley kiyoko, bowling for soup. Saturday 24th august will include post malone, 21");
+        }
     }
 }

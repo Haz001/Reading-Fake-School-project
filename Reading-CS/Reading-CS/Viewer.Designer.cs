@@ -30,6 +30,7 @@
         {
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.button1 = new System.Windows.Forms.Button();
+            this.spek_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -60,11 +61,28 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // spek_btn
+            // 
+            this.spek_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.spek_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.spek_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(22)))), ((int)(((byte)(28)))));
+            this.spek_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.spek_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spek_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.spek_btn.Location = new System.Drawing.Point(651, 425);
+            this.spek_btn.Name = "spek_btn";
+            this.spek_btn.Size = new System.Drawing.Size(83, 36);
+            this.spek_btn.TabIndex = 1;
+            this.spek_btn.Text = "🔊";
+            this.spek_btn.UseVisualStyleBackColor = false;
+            this.spek_btn.Click += new System.EventHandler(this.spek_btn_Click);
+            // 
             // Viewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 461);
+            this.Controls.Add(this.spek_btn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.webBrowser1);
             this.Name = "Viewer";
@@ -79,5 +97,6 @@
 
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button spek_btn;
     }
 }
