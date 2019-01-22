@@ -40,7 +40,7 @@ namespace Reading_CS
 
         private void spek_btn_Click(object sender, EventArgs e)
         {
-            speak.Say("Friday 23 August will include: 1975, Juice world, Pale Waves, camephat, hayley kiyoko, bowling for soup. Saturday 24th august will include post malone, 21");
+            speak.Say("Friday 23 August will include: 1975, Juice world, Pale Waves, camephat, hayley kiyoko, bowling for soup. Saturday 24th august will include post malone, 21 pilots, blossoms, billie eilish, stefflon don, pvris, crucast, g flip. Sunday 25th August will include: foo fighters, bastille, the distillers, not3s, sundara karma, denis sulta, the amazons, yungblud.");
         }
     }
 }
