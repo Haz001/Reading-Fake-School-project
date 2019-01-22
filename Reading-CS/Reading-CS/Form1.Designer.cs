@@ -35,6 +35,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.speak_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -109,12 +110,23 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
+            // speak_btn
+            // 
+            this.speak_btn.Location = new System.Drawing.Point(552, 308);
+            this.speak_btn.Name = "speak_btn";
+            this.speak_btn.Size = new System.Drawing.Size(75, 86);
+            this.speak_btn.TabIndex = 3;
+            this.speak_btn.Text = "S))";
+            this.speak_btn.UseVisualStyleBackColor = true;
+            this.speak_btn.Click += new System.EventHandler(this.speak_btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(22)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(750, 500);
+            this.Controls.Add(this.speak_btn);
             this.Controls.Add(this.view_btn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buy_btn);
@@ -140,6 +152,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button speak_btn;
     }
 }
 

@@ -44,5 +44,10 @@ namespace Reading_CS
         {
             this.Close();
         }
+
+        private void speak_btn_Click(object sender, EventArgs e)
+        {
+            speak.Say("100% Genuin Offical and Trustworthy Reading Festival Order application, Click Buy to buy tickets, click view to view timetable and more. Sponsered by Pepsi Max and Highlits on BBC Radio");
+        }
     }
 }
