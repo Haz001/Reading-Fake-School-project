@@ -72,6 +72,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="speak.cs" />
+    <Compile Include="VAR.cs" />
     <Compile Include="Viewer.cs">
       <SubType>Form</SubType>
     </Compile>
