@@ -20,10 +20,7 @@ namespace Reading_CS
         private void webBrowser1_LocationChanged(object sender, EventArgs e)
         {
             
-            if (webBrowser1.Location.ToString().Contains("tickets"))
-            {
-                MessageBox.Show("Buy throught the application");
-            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,11 +31,8 @@ namespace Reading_CS
         private void webBrowser1_LocationChanged(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             
-            if (webBrowser1.Location.ToString().Contains("tickets"))
-            {
-                MessageBox.Show("Buy throught the application");
-            }
-            if (webBrowser1.Url.ToString().Contains(""))
+            
+            if (webBrowser1.Url.ToString().Lower().Contains("tickets"))
             {
                 MessageBox.Show("Buy throught the application");
             }
