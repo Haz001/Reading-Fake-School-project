@@ -23,6 +23,10 @@ namespace Reading_CS
             MessageBox.Show("Buying:\nFriday" + FRIDAY.Checked.ToString());
             MessageBox.Show("Buying:\nSaturday" + SATURDAY.Checked.ToString());
             MessageBox.Show("Buying:\nSunday" + SUNDAY.Checked.ToString());
+            VAR.sunday = SUNDAY.Checked;
+            VAR.satday = SATURDAY.Checked;
+            VAR.friday = FRIDAY.Checked;
+            VAR.thusday = THURSDAY.Checked;
         }
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
