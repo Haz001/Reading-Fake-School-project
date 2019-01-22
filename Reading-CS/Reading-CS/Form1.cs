@@ -52,9 +52,12 @@ namespace Reading_CS
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(this.Opacity < 100)
+            
+            if(this.Opacity < 1f)
             {
-                this.Opacity += 5;
+                
+                
+                this.Opacity += 0.05f;
             }
         }
     }

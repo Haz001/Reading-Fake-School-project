@@ -68,6 +68,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.webBrowser1);
             this.Name = "Viewer";
+            this.Opacity = 0.95D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Viewer";
             this.ResumeLayout(false);
 
