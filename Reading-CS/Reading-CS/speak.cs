@@ -9,7 +9,7 @@ namespace Reading_CS
 {
     class speak
     {
-        SpeechSynthesizer synth = new SpeechSynthesizer();
+        static SpeechSynthesizer synth = new SpeechSynthesizer();
         public static void Say(string text)
         {
             synth.SpeakAsync(text);

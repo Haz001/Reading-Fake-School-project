@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buy_btn = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.speak_btn = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -56,6 +58,7 @@
             this.buy_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
             this.buy_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buy_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buy_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
             this.buy_btn.Location = new System.Drawing.Point(0, 400);
             this.buy_btn.Name = "buy_btn";
             this.buy_btn.Size = new System.Drawing.Size(250, 100);
@@ -69,6 +72,7 @@
             this.view_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
             this.view_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.view_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.view_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
             this.view_btn.Location = new System.Drawing.Point(500, 400);
             this.view_btn.Name = "view_btn";
             this.view_btn.Size = new System.Drawing.Size(250, 100);
@@ -102,9 +106,10 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(683, 0);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.button1.Location = new System.Drawing.Point(701, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 24);
+            this.button1.Size = new System.Drawing.Size(50, 25);
             this.button1.TabIndex = 2;
             this.button1.Text = "x";
             this.button1.UseVisualStyleBackColor = false;
@@ -112,13 +117,21 @@
             // 
             // speak_btn
             // 
-            this.speak_btn.Location = new System.Drawing.Point(552, 308);
+            this.speak_btn.BackColor = System.Drawing.Color.Yellow;
+            this.speak_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.speak_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.speak_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.speak_btn.Location = new System.Drawing.Point(654, 0);
             this.speak_btn.Name = "speak_btn";
-            this.speak_btn.Size = new System.Drawing.Size(75, 86);
+            this.speak_btn.Size = new System.Drawing.Size(50, 25);
             this.speak_btn.TabIndex = 3;
-            this.speak_btn.Text = "S))";
-            this.speak_btn.UseVisualStyleBackColor = true;
+            this.speak_btn.Text = "🔊";
+            this.speak_btn.UseVisualStyleBackColor = false;
             this.speak_btn.Click += new System.EventHandler(this.speak_btn_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -135,6 +148,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.Opacity = 0.05D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -153,6 +167,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button speak_btn;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

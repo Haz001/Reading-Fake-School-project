@@ -32,7 +32,7 @@ namespace Reading_CS
         {
             
             
-            if (webBrowser1.Url.ToString().Lower().Contains("tickets"))
+            if (webBrowser1.Url.ToString().Contains("tickets"))
             {
                 MessageBox.Show("Buy throught the application");
             }
