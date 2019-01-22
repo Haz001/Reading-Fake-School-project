@@ -19,10 +19,16 @@ namespace Reading_CS
 
         private void Buypage_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            days d = new days();
+            d.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
