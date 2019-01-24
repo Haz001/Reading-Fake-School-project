@@ -40,9 +40,12 @@
             // 
             // donate_btn
             // 
+            this.donate_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.donate_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.donate_btn.ForeColor = System.Drawing.Color.Yellow;
             this.donate_btn.Location = new System.Drawing.Point(99, 142);
             this.donate_btn.Name = "donate_btn";
-            this.donate_btn.Size = new System.Drawing.Size(75, 23);
+            this.donate_btn.Size = new System.Drawing.Size(139, 46);
             this.donate_btn.TabIndex = 1;
             this.donate_btn.Text = "Donate";
             this.donate_btn.UseVisualStyleBackColor = true;

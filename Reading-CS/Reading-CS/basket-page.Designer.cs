@@ -152,7 +152,7 @@
             this.doubleToolStripMenuItem,
             this.payToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(118, 70);
             // 
             // removeToolStripMenuItem
             // 
@@ -189,6 +189,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "basket_page";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "basket_page";
             this.Load += new System.EventHandler(this.basket_page_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
