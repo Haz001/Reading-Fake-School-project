@@ -19,7 +19,8 @@ namespace Reading_CS
 
         private void label1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Test");
+            purches p = new purches();
+            p.ShowDialog();
         }
 
         private void sear_btn_Click(object sender, EventArgs e)

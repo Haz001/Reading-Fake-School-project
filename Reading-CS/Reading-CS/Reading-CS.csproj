@@ -47,15 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
+
     <Compile Include="basket-page.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="basket-page.Designer.cs">
       <DependentUpon>basket-page.cs</DependentUpon>
     </Compile>
->>>>>>> b8b86f9bc6564c3069a3be2f0f814dde16029570
+
     <Compile Include="days.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,12 +92,11 @@
     <Compile Include="weekend.Designer.cs">
       <DependentUpon>weekend.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-=======
+
     <EmbeddedResource Include="basket-page.resx">
       <DependentUpon>basket-page.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> b8b86f9bc6564c3069a3be2f0f814dde16029570
+
     <EmbeddedResource Include="days.resx">
       <DependentUpon>days.cs</DependentUpon>
     </EmbeddedResource>
