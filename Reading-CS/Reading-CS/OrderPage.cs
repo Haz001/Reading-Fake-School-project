@@ -41,6 +41,7 @@ namespace Reading_CS
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox1
             // 
@@ -79,6 +80,11 @@ namespace Reading_CS
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            speak._go("");
         }
     }
 }
