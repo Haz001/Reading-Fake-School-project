@@ -113,6 +113,16 @@ namespace Reading_CS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap day {
+            get {
+                object obj = ResourceManager.GetObject("day", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap friday {
             get {
                 object obj = ResourceManager.GetObject("friday", resourceCulture);
@@ -136,6 +146,16 @@ namespace Reading_CS.Properties {
         internal static System.Drawing.Bitmap saturday {
             get {
                 object obj = ResourceManager.GetObject("saturday", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sunday {
+            get {
+                object obj = ResourceManager.GetObject("sunday", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
