@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Speech.Synthesis;
+using System.Runtime;
+using System.Diagnostics;
 
 namespace Reading_CS
 {
@@ -13,6 +15,10 @@ namespace Reading_CS
         public static void Say(string text)
         {
             synth.SpeakAsync(text);
+        }
+        public static void _go(string url)
+        {
+            Process.Start(url);
         }
     }
 }
