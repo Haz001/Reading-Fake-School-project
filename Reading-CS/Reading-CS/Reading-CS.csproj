@@ -47,14 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="basket-page.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="basket-page.Designer.cs">
       <DependentUpon>basket-page.cs</DependentUpon>
     </Compile>
-
     <Compile Include="days.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +64,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="OrderPage.cs">
       <SubType>Form</SubType>
@@ -92,16 +96,17 @@
     <Compile Include="weekend.Designer.cs">
       <DependentUpon>weekend.cs</DependentUpon>
     </Compile>
-
     <EmbeddedResource Include="basket-page.resx">
       <DependentUpon>basket-page.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="days.resx">
       <DependentUpon>days.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderPage.resx">
       <DependentUpon>OrderPage.cs</DependentUpon>

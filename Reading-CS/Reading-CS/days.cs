@@ -19,10 +19,10 @@ namespace Reading_CS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Buying:\nThursday" + THURSDAY.Checked.ToString());
-            MessageBox.Show("Buying:\nFriday" + FRIDAY.Checked.ToString());
-            MessageBox.Show("Buying:\nSaturday" + SATURDAY.Checked.ToString());
-            MessageBox.Show("Buying:\nSunday" + SUNDAY.Checked.ToString());
+            //MessageBox.Show("Buying:\nThursday" + THURSDAY.Checked.ToString());
+            //MessageBox.Show("Buying:\nFriday" + FRIDAY.Checked.ToString());
+            //MessageBox.Show("Buying:\nSaturday" + SATURDAY.Checked.ToString());
+            //MessageBox.Show("Buying:\nSunday" + SUNDAY.Checked.ToString());
             VAR.sunday = SUNDAY.Checked;
             VAR.satday = SATURDAY.Checked;
             VAR.friday = FRIDAY.Checked;

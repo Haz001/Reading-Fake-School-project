@@ -19,6 +19,8 @@ namespace Reading_CS
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            login l = new login();
+            l.ShowDialog();
             pu = true;
             this.Close();
         }
@@ -54,6 +56,17 @@ namespace Reading_CS
                 MessageBox.Show("Purches is required!");
                 e.Cancel = true;
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not avalible");
+        }
+
+        private void donate_btn_Click(object sender, EventArgs e)
+        {
+            login l = new login();
+            l.ShowDialog();
         }
     }
 }

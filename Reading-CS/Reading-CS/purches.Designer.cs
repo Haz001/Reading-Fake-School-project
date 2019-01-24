@@ -30,23 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(purches));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.donate_btn = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // donate_btn
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(450, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(212, 250);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.donate_btn.Location = new System.Drawing.Point(99, 142);
+            this.donate_btn.Name = "donate_btn";
+            this.donate_btn.Size = new System.Drawing.Size(75, 23);
+            this.donate_btn.TabIndex = 1;
+            this.donate_btn.Text = "Donate";
+            this.donate_btn.UseVisualStyleBackColor = true;
+            this.donate_btn.Click += new System.EventHandler(this.donate_btn_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pictureBox2
             // 
@@ -57,22 +63,17 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // donate_btn
+            // pictureBox1
             // 
-            this.donate_btn.Location = new System.Drawing.Point(99, 142);
-            this.donate_btn.Name = "donate_btn";
-            this.donate_btn.Size = new System.Drawing.Size(75, 23);
-            this.donate_btn.TabIndex = 1;
-            this.donate_btn.Text = "Donate";
-            this.donate_btn.UseVisualStyleBackColor = true;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 10;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(450, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(212, 250);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // purches
             // 
@@ -86,8 +87,8 @@
             this.Name = "purches";
             this.Text = "purches";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.purches_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

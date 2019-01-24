@@ -12,5 +12,6 @@ namespace Reading_CS
         public static bool satday = false;
         public static bool friday = false;
         public static bool thusday = false;
+        public static bool week = false;
     }
 }

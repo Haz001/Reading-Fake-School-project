@@ -21,6 +21,7 @@ namespace Reading_CS
         {
             purches p = new purches();
             p.ShowDialog();
+
         }
 
         private void sear_btn_Click(object sender, EventArgs e)
@@ -64,12 +65,12 @@ namespace Reading_CS
         {
             if (VAR.friday)
             {
-                price += 65.50f;
+                price += 69.50f;
                 listBox1.Items.Add("Friday £69.50");
             }
             if (VAR.satday)
             {
-                price += 65.50f;
+                price += 69.50f;
                 listBox1.Items.Add("Satday £69.50");
             }
             if (VAR.sunday)
@@ -77,8 +78,31 @@ namespace Reading_CS
                 price += 74.50f;
                 listBox1.Items.Add("Sunday £74.50");
             }
+            if (VAR.week)
+            {
+                price += 205f;
+                listBox1.Items.Add("Sunday £250");
+            }
             upd();
 
+        }
+
+        private void removeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string a = listBox1.GetItemText(listBox1.SelectedItem);
+            try
+            {
+                
+                price -= (float)Convert.ToDouble(a.Split(new string[] { "£", "$" }, StringSplitOptions.None)[1]);
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+            }
+            catch (Exception error)
+            {
+
+                MessageBox.Show(error.Message);
+            }
+            upd();
+           
         }
     }
 }

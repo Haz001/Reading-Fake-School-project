@@ -86,6 +86,7 @@ namespace Reading_CS
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             speak._go("https://reading-festival.frontgatetickets.com/event/n0ui2ip2u5s508ec?utm_source=2019_WB_17");
+            VAR.week = true;
             basket_page p = new basket_page();
             p.ShowDialog();
         }
