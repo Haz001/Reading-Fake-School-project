@@ -19,7 +19,7 @@ namespace Reading_CS
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Test");
         }
 
         private void sear_btn_Click(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace Reading_CS
         private void early_btn_Click(object sender, EventArgs e)
         {
             price += 20f;
-            listBox1.Items.Add("Early Pass £75");
+            listBox1.Items.Add("Early Pass £20");
             early_btn.Enabled = false;
             upd();
         }
