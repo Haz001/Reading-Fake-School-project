@@ -27,6 +27,7 @@ namespace Reading_CS
             VAR.satday = SATURDAY.Checked;
             VAR.friday = FRIDAY.Checked;
             VAR.thusday = THURSDAY.Checked;
+            this.Close();
         }
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
