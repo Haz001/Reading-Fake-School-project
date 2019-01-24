@@ -47,12 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Buypage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Buypage.Designer.cs">
-      <DependentUpon>Buypage.cs</DependentUpon>
-    </Compile>
     <Compile Include="days.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,9 +78,6 @@
     <Compile Include="weekend.Designer.cs">
       <DependentUpon>weekend.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Buypage.resx">
-      <DependentUpon>Buypage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="days.resx">
       <DependentUpon>days.cs</DependentUpon>
     </EmbeddedResource>

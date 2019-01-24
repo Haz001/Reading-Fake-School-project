@@ -34,7 +34,7 @@ namespace Reading_CS
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Buypage bp = new Buypage();
+            orderpage bp = new orderpage();
             bp.ShowDialog();
 
 
