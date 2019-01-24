@@ -64,6 +64,7 @@ namespace Reading_CS
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // orderpage
             // 
@@ -85,6 +86,15 @@ namespace Reading_CS
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             speak._go("https://reading-festival.frontgatetickets.com/event/n0ui2ip2u5s508ec?utm_source=2019_WB_17");
+            purches p = new purches();
+            p.ShowDialog();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            days d = new days();
+            d.ShowDialog();
+            p.ShowDialog();
         }
     }
 }
