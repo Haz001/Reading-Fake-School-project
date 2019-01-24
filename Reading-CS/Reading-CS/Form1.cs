@@ -34,7 +34,11 @@ namespace Reading_CS
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             orderpage bp = new orderpage();
+=======
+            basket_page bp = new basket_page();
+>>>>>>> b8b86f9bc6564c3069a3be2f0f814dde16029570
             bp.ShowDialog();
 
 
