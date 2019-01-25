@@ -22,7 +22,10 @@ namespace Reading_CS
             login l = new login();
             l.ShowDialog();
             pu = true;
+            PrintOut p = new PrintOut();
+            p.ShowDialog();
             this.Close();
+
         }
         public int x = 1;
         public int y = 1;
@@ -30,7 +33,7 @@ namespace Reading_CS
         {
             donate_btn.Location = new Point(donate_btn.Location.X + x, donate_btn.Location.Y);
             donate_btn.Location = new Point(donate_btn.Location.X, donate_btn.Location.Y+y);
-            if(donate_btn.Location.X+donate_btn.Width >= this.Width)
+            if((donate_btn.Location.X+donate_btn.Width) > this.Width)
             {
                 x = -1;
             }
@@ -38,7 +41,7 @@ namespace Reading_CS
             {
                 x = +1;
             }
-            if (donate_btn.Location.Y+donate_btn.Height >= this.Height)
+            if ((donate_btn.Location.Y+donate_btn.Height) > this.Height)
             {
                 y = -1;
             }
@@ -67,6 +70,11 @@ namespace Reading_CS
         {
             login l = new login();
             l.ShowDialog();
+        }
+
+        private void purches_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

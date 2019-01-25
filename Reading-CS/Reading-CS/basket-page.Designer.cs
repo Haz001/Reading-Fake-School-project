@@ -29,25 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(basket_page));
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.park_btn = new System.Windows.Forms.Button();
-            this.lockers_btn = new System.Windows.Forms.Button();
-            this.early_btn = new System.Windows.Forms.Button();
-            this.sear_btn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.price_lb = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doubleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.payToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.park_btn = new System.Windows.Forms.Button();
+            this.lockers_btn = new System.Windows.Forms.Button();
+            this.early_btn = new System.Windows.Forms.Button();
+            this.sear_btn = new System.Windows.Forms.Button();
+            this.price_lb = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(549, 345);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
@@ -68,6 +70,34 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(154, 325);
             this.listBox1.TabIndex = 1;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.removeToolStripMenuItem,
+            this.doubleToolStripMenuItem,
+            this.payToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(118, 70);
+            // 
+            // removeToolStripMenuItem
+            // 
+            this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.removeToolStripMenuItem.Text = "Remove";
+            this.removeToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
+            // 
+            // doubleToolStripMenuItem
+            // 
+            this.doubleToolStripMenuItem.Name = "doubleToolStripMenuItem";
+            this.doubleToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.doubleToolStripMenuItem.Text = "Double";
+            // 
+            // payToolStripMenuItem
+            // 
+            this.payToolStripMenuItem.Name = "payToolStripMenuItem";
+            this.payToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.payToolStripMenuItem.Text = "Pay";
             // 
             // park_btn
             // 
@@ -125,17 +155,6 @@
             this.sear_btn.UseVisualStyleBackColor = true;
             this.sear_btn.Click += new System.EventHandler(this.sear_btn_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Reading_CS.Properties.Resources.date_logo_home_reading;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(524, 350);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // price_lb
             // 
             this.price_lb.AutoSize = true;
@@ -145,39 +164,24 @@
             this.price_lb.TabIndex = 4;
             this.price_lb.Text = "label2";
             // 
-            // contextMenuStrip1
+            // pictureBox1
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.removeToolStripMenuItem,
-            this.doubleToolStripMenuItem,
-            this.payToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(118, 70);
-            // 
-            // removeToolStripMenuItem
-            // 
-            this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
-            this.removeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.removeToolStripMenuItem.Text = "Remove";
-            this.removeToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
-            // 
-            // doubleToolStripMenuItem
-            // 
-            this.doubleToolStripMenuItem.Name = "doubleToolStripMenuItem";
-            this.doubleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.doubleToolStripMenuItem.Text = "Double";
-            // 
-            // payToolStripMenuItem
-            // 
-            this.payToolStripMenuItem.Name = "payToolStripMenuItem";
-            this.payToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.payToolStripMenuItem.Text = "Pay";
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Reading_CS.Properties.Resources.date_logo_home_reading;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(524, 350);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // basket_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.BackgroundImage = global::Reading_CS.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(684, 461);
             this.Controls.Add(this.price_lb);
             this.Controls.Add(this.pictureBox1);
@@ -188,12 +192,15 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "basket_page";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "basket_page";
+            this.Text = "Basket";
             this.Load += new System.EventHandler(this.basket_page_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

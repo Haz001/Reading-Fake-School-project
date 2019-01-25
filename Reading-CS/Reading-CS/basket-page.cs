@@ -19,6 +19,12 @@ namespace Reading_CS
 
         private void label1_Click(object sender, EventArgs e)
         {
+            string x = "";
+            for (int i = 0; i< listBox1.Items.Count;i++) {
+                listBox1.SelectedIndex = i;
+                x += listBox1.GetItemText(listBox1.SelectedItem)+"\n";
+            }
+            VAR.order = x;
             purches p = new purches();
             p.ShowDialog();
 
@@ -81,7 +87,7 @@ namespace Reading_CS
             if (VAR.week)
             {
                 price += 205f;
-                listBox1.Items.Add("Sunday £250");
+                listBox1.Items.Add("Week £250");
             }
             upd();
 

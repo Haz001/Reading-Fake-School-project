@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(days));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.THURSDAY = new System.Windows.Forms.CheckBox();
@@ -39,6 +40,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Reading_CS.Properties.Resources.header;
             this.pictureBox1.Location = new System.Drawing.Point(12, 1);
             this.pictureBox1.Name = "pictureBox1";
@@ -63,68 +65,97 @@
             // 
             // THURSDAY
             // 
+            this.THURSDAY.Appearance = System.Windows.Forms.Appearance.Button;
             this.THURSDAY.AutoSize = true;
+            this.THURSDAY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.THURSDAY.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.THURSDAY.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.THURSDAY.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(22)))), ((int)(((byte)(28)))));
+            this.THURSDAY.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.THURSDAY.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.THURSDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.THURSDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.THURSDAY.Location = new System.Drawing.Point(12, 135);
             this.THURSDAY.Name = "THURSDAY";
-            this.THURSDAY.Size = new System.Drawing.Size(298, 33);
+            this.THURSDAY.Size = new System.Drawing.Size(289, 39);
             this.THURSDAY.TabIndex = 3;
             this.THURSDAY.Text = "Thursday - (Out of Stock)";
-            this.THURSDAY.UseVisualStyleBackColor = true;
+            this.THURSDAY.UseVisualStyleBackColor = false;
             this.THURSDAY.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // FRIDAY
             // 
+            this.FRIDAY.Appearance = System.Windows.Forms.Appearance.Button;
             this.FRIDAY.AutoSize = true;
+            this.FRIDAY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.FRIDAY.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.FRIDAY.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.FRIDAY.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(22)))), ((int)(((byte)(28)))));
+            this.FRIDAY.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FRIDAY.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FRIDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.FRIDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.FRIDAY.Location = new System.Drawing.Point(12, 174);
             this.FRIDAY.Name = "FRIDAY";
-            this.FRIDAY.Size = new System.Drawing.Size(190, 33);
+            this.FRIDAY.Size = new System.Drawing.Size(181, 39);
             this.FRIDAY.TabIndex = 4;
             this.FRIDAY.Text = "Friday - £69.50";
-            this.FRIDAY.UseVisualStyleBackColor = true;
+            this.FRIDAY.UseVisualStyleBackColor = false;
             this.FRIDAY.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // SATURDAY
             // 
+            this.SATURDAY.Appearance = System.Windows.Forms.Appearance.Button;
             this.SATURDAY.AutoSize = true;
+            this.SATURDAY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.SATURDAY.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.SATURDAY.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.SATURDAY.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(22)))), ((int)(((byte)(28)))));
+            this.SATURDAY.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SATURDAY.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SATURDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.SATURDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.SATURDAY.Location = new System.Drawing.Point(12, 213);
             this.SATURDAY.Name = "SATURDAY";
-            this.SATURDAY.Size = new System.Drawing.Size(217, 33);
+            this.SATURDAY.Size = new System.Drawing.Size(208, 39);
             this.SATURDAY.TabIndex = 5;
             this.SATURDAY.Text = "Saturday - £69.50";
-            this.SATURDAY.UseVisualStyleBackColor = true;
+            this.SATURDAY.UseVisualStyleBackColor = false;
             this.SATURDAY.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // SUNDAY
             // 
+            this.SUNDAY.Appearance = System.Windows.Forms.Appearance.Button;
             this.SUNDAY.AutoSize = true;
+            this.SUNDAY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.SUNDAY.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.SUNDAY.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.SUNDAY.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(22)))), ((int)(((byte)(28)))));
+            this.SUNDAY.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SUNDAY.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SUNDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.SUNDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.SUNDAY.Location = new System.Drawing.Point(12, 252);
             this.SUNDAY.Name = "SUNDAY";
-            this.SUNDAY.Size = new System.Drawing.Size(203, 33);
+            this.SUNDAY.Size = new System.Drawing.Size(194, 39);
             this.SUNDAY.TabIndex = 6;
             this.SUNDAY.Text = "Sunday - £74.50";
-            this.SUNDAY.UseVisualStyleBackColor = true;
+            this.SUNDAY.UseVisualStyleBackColor = false;
             // 
             // days
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(22)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.BackgroundImage = global::Reading_CS.Properties.Resources.bg;
+            this.ClientSize = new System.Drawing.Size(331, 353);
             this.Controls.Add(this.SUNDAY);
             this.Controls.Add(this.SATURDAY);
             this.Controls.Add(this.FRIDAY);
             this.Controls.Add(this.THURSDAY);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "days";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "days";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
